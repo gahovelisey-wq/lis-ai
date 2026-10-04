@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#101411">
+  <meta name="description" content="LIS AI — твой умный помощник для идей, учёбы, игр и повседневных задач.">
+  <title>LIS AI — Лис АИ знает всё на свете</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <div class="glow glow-a"></div><div class="glow glow-b"></div>
+  <main class="app-shell">
+    <aside class="sidebar">
+      <a class="brand" href="/" aria-label="LIS AI — главная">
+        <div class="logo">🦊<span></span></div>
+        <div><strong>LIS <i>AI</i></strong><small>Лис АИ знает всё на свете</small></div>
+      </a>
+      <button class="new-chat" id="newChat"><span>＋</span> Новый чат</button>
+      <div class="side-label">ПОПРОБУЙ СПРОСИТЬ</div>
+      <button class="suggestion" data-prompt="Придумай идею для игрового YouTube Shorts">🎮 <span>Идея для игрового видео</span></button>
+      <button class="suggestion" data-prompt="Объясни сложную тему простыми словами">💡 <span>Объясни простыми словами</span></button>
+      <button class="suggestion" data-prompt="Помоги составить план на неделю">🗓️ <span>Составь план</span></button>
+      <div class="sidebar-bottom"><div class="online-dot"></div><span>Готов к новым идеям</span></div>
+    </aside>
+    <section class="main-panel">
+      <header class="topbar">
+        <div class="mobile-brand">🦊 <b>LIS <i>AI</i></b></div>
+        <div class="model-pill"><span></span> LIS AI помощник</div>
+        <a class="top-link" href="#about">О проекте</a>
+      </header>
+      <div class="chat-wrap" id="chatWrap">
+        <section class="welcome" id="welcome">
+          <div class="fox-avatar">🦊<span class="avatar-spark">✦</span></div>
+          <div class="eyebrow"><span></span> ТВОЙ AI-ПОМОЩНИК</div>
+          <h1>Привет! Я <em>LIS AI</em></h1>
+          <p class="welcome-text">Твой лисий помощник для идей, ответов и новых открытий.<br>С чего начнём сегодня?</p>
+          <div class="prompt-grid">
+            <button class="prompt-card" data-prompt="Придумай пять крутых идей для игрового канала"><span>🎯</span><b>Найти идею</b><small>Для видео, проекта или хобби</small><i>↗</i></button>
+            <button class="prompt-card" data-prompt="Научи меня чему-нибудь интересному за одну минуту"><span>🧠</span><b>Узнать новое</b><small>Коротко и понятным языком</small><i>↗</i></button>
+            <button class="prompt-card" data-prompt="Помоги придумать крутое название для проекта"><span>✨</span><b>Создать что-то</b><small>Названия, тексты и концепции</small><i>↗</i></button>
+            <button class="prompt-card" data-prompt="Дай полезный совет для сегодняшнего дня"><span>🚀</span><b>Начать действовать</b><small>План и полезные советы</small><i>↗</i></button>
+          </div>
+        </section>
+        <div class="messages" id="messages" aria-live="polite"></div>
+      </div>
+      <div class="composer-area">
+        <form class="composer" id="chatForm">
+          <textarea id="messageInput" rows="1" maxlength="6000" placeholder="Спроси о чём угодно..." aria-label="Ваше сообщение"></textarea>
+          <button class="send-btn" id="sendBtn" aria-label="Отправить сообщение" type="submit"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 19V5M6 11l6-6 6 6"/></svg></button>
+        </form>
+        <div class="composer-note">LIS AI может ошибаться — проверяй важную информацию.</div>
+      </div>
+      <footer id="about"><span>🦊 LIS AI</span><span>Создан для любопытных</span></footer>
+    </section>
+  </main>
+  <script src="/app.js"></script>
+</body>
+</html>
